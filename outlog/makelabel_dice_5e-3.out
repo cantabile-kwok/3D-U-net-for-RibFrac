@@ -1,0 +1,85 @@
+  0%|          | 0/80 [00:00<?, ?it/s]  1%|▏         | 1/80 [00:20<26:28, 20.10s/it]  2%|▎         | 2/80 [00:36<23:34, 18.13s/it]  4%|▍         | 3/80 [00:58<25:24, 19.80s/it]  5%|▌         | 4/80 [01:11<21:43, 17.15s/it]  6%|▋         | 5/80 [01:32<23:17, 18.64s/it]  8%|▊         | 6/80 [01:55<24:39, 19.99s/it]  9%|▉         | 7/80 [02:17<25:12, 20.71s/it] 10%|█         | 8/80 [02:39<25:05, 20.90s/it] 11%|█▏        | 9/80 [02:58<24:19, 20.56s/it] 12%|█▎        | 10/80 [03:18<23:38, 20.26s/it] 14%|█▍        | 11/80 [03:36<22:25, 19.50s/it] 15%|█▌        | 12/80 [03:57<22:46, 20.09s/it] 16%|█▋        | 13/80 [04:23<24:19, 21.79s/it] 18%|█▊        | 14/80 [04:43<23:23, 21.26s/it] 19%|█▉        | 15/80 [05:00<21:32, 19.89s/it] 20%|██        | 16/80 [05:17<20:16, 19.02s/it] 21%|██▏       | 17/80 [05:30<18:09, 17.29s/it] 22%|██▎       | 18/80 [05:36<14:17, 13.84s/it] 24%|██▍       | 19/80 [05:52<14:49, 14.58s/it] 25%|██▌       | 20/80 [06:09<15:17, 15.29s/it] 26%|██▋       | 21/80 [06:25<15:12, 15.46s/it] 28%|██▊       | 22/80 [06:29<11:37, 12.03s/it] 29%|██▉       | 23/80 [06:44<12:11, 12.83s/it] 30%|███       | 24/80 [07:02<13:35, 14.56s/it] 31%|███▏      | 25/80 [07:24<15:16, 16.66s/it] 32%|███▎      | 26/80 [07:40<14:49, 16.47s/it] 34%|███▍      | 27/80 [07:47<11:58, 13.55s/it] 35%|███▌      | 28/80 [08:05<12:57, 14.95s/it] 36%|███▋      | 29/80 [08:25<14:07, 16.62s/it] 38%|███▊      | 30/80 [08:45<14:42, 17.65s/it] 39%|███▉      | 31/80 [09:06<15:12, 18.62s/it] 40%|████      | 32/80 [09:22<14:19, 17.92s/it] 41%|████▏     | 33/80 [09:43<14:42, 18.77s/it] 42%|████▎     | 34/80 [10:02<14:26, 18.83s/it] 44%|████▍     | 35/80 [10:07<10:56, 14.58s/it] 45%|████▌     | 36/80 [10:18<09:58, 13.60s/it] 46%|████▋     | 37/80 [10:29<09:15, 12.92s/it] 48%|████▊     | 38/80 [10:46<09:45, 13.95s/it] 49%|████▉     | 39/80 [11:03<10:13, 14.97s/it] 50%|█████     | 40/80 [11:18<10:00, 15.01s/it] 51%|█████▏    | 41/80 [11:36<10:15, 15.77s/it] 52%|█████▎    | 42/80 [11:43<08:23, 13.25s/it] 54%|█████▍    | 43/80 [12:00<08:51, 14.36s/it] 55%|█████▌    | 44/80 [12:14<08:30, 14.18s/it] 56%|█████▋    | 45/80 [12:24<07:31, 12.90s/it] 57%|█████▊    | 46/80 [12:43<08:20, 14.71s/it] 59%|█████▉    | 47/80 [13:03<08:56, 16.27s/it] 60%|██████    | 48/80 [13:15<08:00, 15.00s/it] 61%|██████▏   | 49/80 [13:29<07:34, 14.65s/it] 62%|██████▎   | 50/80 [13:50<08:22, 16.75s/it] 64%|██████▍   | 51/80 [14:13<08:57, 18.55s/it] 65%|██████▌   | 52/80 [14:19<06:56, 14.88s/it] 66%|██████▋   | 53/80 [14:37<07:03, 15.69s/it] 68%|██████▊   | 54/80 [14:48<06:09, 14.21s/it] 69%|██████▉   | 55/80 [15:01<05:48, 13.93s/it] 70%|███████   | 56/80 [15:16<05:43, 14.31s/it] 71%|███████▏  | 57/80 [15:35<05:59, 15.63s/it] 72%|███████▎  | 58/80 [15:51<05:46, 15.76s/it] 74%|███████▍  | 59/80 [15:58<04:33, 13.03s/it] 75%|███████▌  | 60/80 [16:16<04:52, 14.61s/it] 76%|███████▋  | 61/80 [16:33<04:54, 15.48s/it] 78%|███████▊  | 62/80 [16:49<04:40, 15.56s/it] 79%|███████▉  | 63/80 [17:09<04:46, 16.86s/it] 80%|████████  | 64/80 [17:27<04:34, 17.14s/it] 81%|████████▏ | 65/80 [17:58<05:20, 21.34s/it] 82%|████████▎ | 66/80 [18:16<04:44, 20.32s/it] 84%|████████▍ | 67/80 [18:30<04:00, 18.51s/it] 85%|████████▌ | 68/80 [18:36<02:55, 14.62s/it] 86%|████████▋ | 69/80 [18:57<03:04, 16.75s/it] 88%|████████▊ | 70/80 [19:15<02:51, 17.10s/it] 89%|████████▉ | 71/80 [19:35<02:41, 17.95s/it] 90%|█████████ | 72/80 [19:39<01:48, 13.57s/it] 91%|█████████▏| 73/80 [19:55<01:41, 14.45s/it] 92%|█████████▎| 74/80 [20:12<01:30, 15.13s/it] 94%|█████████▍| 75/80 [20:30<01:20, 16.14s/it] 95%|█████████▌| 76/80 [20:47<01:05, 16.44s/it] 96%|█████████▋| 77/80 [20:58<00:43, 14.62s/it] 98%|█████████▊| 78/80 [21:09<00:27, 13.64s/it] 99%|█████████▉| 79/80 [21:27<00:15, 15.02s/it]100%|██████████| 80/80 [21:45<00:00, 15.84s/it]100%|██████████| 80/80 [21:45<00:00, 16.32s/it]
+now number of labels is  71
+now number of labels is  106
+now number of labels is  136
+now number of labels is  163
+now number of labels is  215
+now number of labels is  251
+now number of labels is  301
+now number of labels is  356
+now number of labels is  426
+now number of labels is  464
+now number of labels is  498
+now number of labels is  552
+now number of labels is  591
+now number of labels is  640
+now number of labels is  683
+now number of labels is  726
+now number of labels is  777
+now number of labels is  793
+now number of labels is  831
+now number of labels is  872
+now number of labels is  911
+now number of labels is  931
+now number of labels is  959
+now number of labels is  1004
+now number of labels is  1066
+now number of labels is  1095
+now number of labels is  1115
+now number of labels is  1170
+now number of labels is  1232
+now number of labels is  1282
+now number of labels is  1342
+now number of labels is  1380
+now number of labels is  1447
+now number of labels is  1492
+now number of labels is  1508
+now number of labels is  1543
+now number of labels is  1574
+now number of labels is  1608
+now number of labels is  1653
+now number of labels is  1691
+now number of labels is  1736
+now number of labels is  1765
+now number of labels is  1806
+now number of labels is  1834
+now number of labels is  1865
+now number of labels is  1904
+now number of labels is  1946
+now number of labels is  1963
+now number of labels is  2018
+now number of labels is  2093
+now number of labels is  2138
+now number of labels is  2166
+now number of labels is  2225
+now number of labels is  2251
+now number of labels is  2297
+now number of labels is  2324
+now number of labels is  2381
+now number of labels is  2420
+now number of labels is  2445
+now number of labels is  2506
+now number of labels is  2555
+now number of labels is  2588
+now number of labels is  2636
+now number of labels is  2682
+now number of labels is  2759
+now number of labels is  2824
+now number of labels is  2855
+now number of labels is  2874
+now number of labels is  2933
+now number of labels is  2975
+now number of labels is  3028
+now number of labels is  3045
+now number of labels is  3084
+now number of labels is  3124
+now number of labels is  3153
+now number of labels is  3199
+now number of labels is  3234
+now number of labels is  3258
+now number of labels is  3305
+now number of labels is  3355
+DONE
+*************************
+experiment: 		 experiments/dice5e-3
+prob thres:		0.5

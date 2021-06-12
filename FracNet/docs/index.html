@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>FracNet</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="medical-imaging, deep-learning, rib, fracture, ribfrac, fracnet">
+    <meta name="description" content="FracNet Project Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/project.css" media="screen">
+    <link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
+
+
+</head>
+
+<body>
+
+
+    <div id="content">
+        <center><img src="assets/background.png" border="0" width="100%"></center>
+
+        <div id="content-inner">
+            <div class="section head">
+                <h1>Deep-learning-assisted detection and segmentation of rib fractures from CT scans: <br>Development
+                    and validation of FracNet
+                </h1>
+                <br>
+
+                <div class="authors">
+                    Liang Jin*, &nbsp;&nbsp;
+                    <a href="https://jiancheng-yang.com/" target="_blank">Jiancheng Yang*</a>, &nbsp;&nbsp;
+                    <a href="http://kaimingkuang.github.io/" target="_blank">Kaiming Kuang</a>, &nbsp;&nbsp;
+                    <a href="https://scholar.google.com/citations?user=eUbmKwYAAAAJ" target="_blank">Bingbing Ni</a>,
+                    &nbsp;&nbsp;
+                    <br>
+                    Yiyi Gao, &nbsp;&nbsp;
+                    Yingli Sun, &nbsp;&nbsp;
+                    Pan Gao, &nbsp;&nbsp;
+                    Weiling Ma, &nbsp;&nbsp;
+                    Mingyu Tan, &nbsp;&nbsp;
+                    Hui Kang, &nbsp;&nbsp;
+                    Jiajun Chen,&nbsp;&nbsp;
+                    Ming Li &nbsp;&nbsp;
+                </div>
+                <div class="affiliations">
+                    <sup>1</sup> Huadong Hospital, affiliated to Fudan University<br>
+                    <sup>2</sup> Shanghai Jiao Tong University<br>
+                    <sup>3</sup> MoE Key Lab of Artificial Intelligence, AI Institute, Shanghai Jiao Tong University<br>
+                    <sup>4</sup> Dianei Technology<br>
+                    <sup>5</sup> Huawei Hisilicon<br>
+                    <sup>6</sup> Institute of Functional and Molecular Medical Imaging, Fudan University<br>
+
+                </div>
+
+            </div>
+            <center>
+                <font size="3">
+                    Paper
+                    [<a href="https://doi.org/10.1016/j.ebiom.2020.103106" target="_blank">EBioMedicine</a>]
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Code
+                    [<a href="https://github.com/M3DV/FracNet" target="_blank">Github</a>]
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Dataset
+                    [<a href="https://ribfrac.grand-challenge.org/" target="_blank">Download</a>]
+                </font>
+            </center>
+
+            <div class="section" id="abstract">
+                <h2>Abstract</h2>
+                <p style="text-align:justify; text-justify:inter-ideograph">
+                    <b>Background:</b>
+                    Diagnosis of rib fractures plays an important role in identifying trauma severity. However, quickly
+                    and precisely identifying the rib fractures in a large number of CT images with increasing number of
+                    patients is a tough task, which is also subject to the qualification of radiologist. We aim at a
+                    clinically applicable automatic system for rib fracture detection and segmentation from CT scans.
+                    <br>
+
+                    <b>Methods:</b>
+                    A total of 7,473 annotated traumatic rib fractures from 900 patients in a single center were
+                    enrolled into our dataset, named RibFrac Dataset, which were annotated with a human-in-the-loop
+                    labeling procedure. We developed a deep learning model, named FracNet, to detect and segment rib
+                    fractures. 720, 60 and 120 patients were randomly split as training cohort, tuning cohort and test
+                    cohort, respectively. Free-Response ROC (FROC) analysis was used to evaluate the sensitivity and
+                    false positives of the detection performance, and Intersection-over-Union (IoU) and Dice Coefficient
+                    (Dice) were used to evaluate the segmentation performance of predicted rib fractures. Observer
+                    studies, including independent human-only study and human-collaboration study, were used to
+                    benchmark the FracNet with human performance and evaluate its clinical applicability. A annotated
+                    subset of RibFrac Dataset, including 420 for training, 60 for tuning and 120 for test, as well as
+                    our code for model training and evaluation, was <b>open</b> to research community to facilitate both
+                    clinical and engineering research.
+                    <br>
+
+                    <b>Findings:</b>
+                    Our method achieved a detection sensitivity of 92.9% with 5.27 false positives per scan and a
+                    segmentation Dice of 71.5%on the test cohort. Human experts achieved much lower false positives per
+                    scan, while underperforming the deep neural networks in terms of detection sensitivities with longer
+                    time in diagnosis. With human-computer collobration, human experts achieved higher detection
+                    sensitivities than human-only or computer-only diagnosis.
+                    <br>
+
+                    <b>Interpretation:</b>
+                    The proposed FracNet provided increasing detection sensitivity of rib fractures with significantly
+                    decreased clinical time consumed, which established a clinically applicable method to assist the
+                    radiologist in clinical practice.
+                </p>
+            </div>
+
+            <div class="section" id="materials">
+                <h2>RibFrac Dataset</h2>
+                <center>
+                    <Caption>
+                        MICCAI 2020 RibFrac Challenge<br>
+                    </Caption>
+                    <a href="https://ribfrac.grand-challenge.org/" target="_blank">
+                        <img src="assets/banner-miccai.png" border="0" width="100%">
+                    </a>
+                </center>
+
+                <p style="text-align:justify; text-justify:inter-ideograph">
+                    We collect a large-scale rib fracture CT dataset, named RibFrac Dataset as a benchmark for
+                    developping algorithms on rib fracture detection, segmentation and classification. You may access
+                    the public part of RibFrac dataset via <b><a href="https://ribfrac.grand-challenge.org/"
+                            target="_blank">RibFrac Challenge</a></b> website after one-click free registeration, which
+                    was an official MICCAI
+                    2020 challenge. There is sight difference with the public dataset in this paper and that in the
+                    RibFrac Challenge, please refer to the <a href="https://ribfrac.grand-challenge.org/tasks/"
+                        target="_blank">RibFrac Challenge</a> website for details.
+                </p>
+
+                <p>
+                <table align="center" class="tg">
+                    <Caption>RibFrac Dataset Overview</Caption><br>
+                    <thead>
+                        <tr>
+                            <th>Cohorts</th>
+                            <th>Availability</th>
+                            <th>No. Patients / CT Scans</th>
+                            <th>No. CT Slices</th>
+                            <th>No. Fractures</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Training</td>
+                            <td>Total</td>
+                            <td>720</td>
+                            <td>265,302</td>
+                            <td>6,156</td>
+                        </tr>
+                        <tr>
+                            <td>Public</td>
+                            <td>420</td>
+                            <td>154,127</td>
+                            <td>3,987</td>
+                        </tr>
+                        <tr>
+                            <td>In-House</td>
+                            <td>300</td>
+                            <td>111,175</td>
+                            <td>2,169</td>
+                        </tr>
+                        <tr>
+                            <td>Tuning</td>
+                            <td>Public</td>
+                            <td>60</td>
+                            <td>22,562</td>
+                            <td>435</td>
+                        </tr>
+                        <tr>
+                            <td>Test</td>
+                            <td>Public</td>
+                            <td>120</td>
+                            <td>44,619</td>
+                            <td>882</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </p>
+                <p>
+                    <center>
+                        <Caption>Examples of RibFrac Dataset</Caption><br>
+                        <img src="assets/example.png" border="0" width="70%">
+                    </center>
+                </p>
+            </div>
+
+            <div class="section" id="methods">
+                <h2>Network Architecture of FracNet</h2>
+                <p>
+                    A 3D-UNet-based convolutional neural network, named FracNet, was developed to segment the fractures
+                    in a sliding window fashion.
+                </p>
+                <p>
+                    <center>
+                        <img src="assets/gr2.jpg" border="0" width="70%">
+                    </center>
+                </p>
+            </div>
+
+            <div class="section" id="performance">
+                <h2>Model Performance</h2>
+                <h3>
+                    FracNet performs consistently on RibFrac cohorts
+                </h3>
+                <p>
+                    <center>
+                        <img src="assets/gr3.jpg" border="0" width="70%">
+                    </center>
+                </p>
+
+                <h3>
+                    Human-computer collaboration
+                </h3>
+                <p>
+                    <center>
+                        <Caption>
+                            A comparison of human-only and human-computer collaboration detection performance<br>
+                        </Caption>
+                        <img src="assets/gr4.jpg" border="0" width="50%">
+                    </center>
+                </p>
+                <p>
+                <table align="center" class="tg">
+                    <Caption>A comparison of detection performance and clinical time on RibFrac Test Set</Caption><br>
+                    <thead>
+                        <tr>
+                            <th rowspan="2"></th>
+                            <th colspan="3">Detection Performance</th>
+                            <th>Clinical Time</th>
+                        </tr>
+                        <tr>
+                            <td>Sensitivity</td>
+                            <td>Avg FP</td>
+                            <td>Workflow</td>
+                            <td>Average Time</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>FracNet</td>
+                            <td>92.9%</td>
+                            <td>5.27</td>
+                            <td>Model (31s)</td>
+                            <td>31s</td>
+                        </tr>
+                        <tr>
+                            <td>R1</td>
+                            <td>79.1%</td>
+                            <td>1.34</td>
+                            <td>Diagnosis (322s) + Segmentation (579s)</td>
+                            <td>901s</td>
+                        </tr>
+                        <tr>
+                            <td>R2</td>
+                            <td>75.9%</td>
+                            <td>0.92</td>
+                            <td>Diagnosis (282s) + Segmentation (550s)</td>
+                            <td>832s</td>
+                        </tr>
+                        <tr>
+                            <td>R1-FracNet Co.</td>
+                            <td>93.4%</td>
+                            <td>1.58</td>
+                            <td>Model (31s) + FPR (79s) + Segmentation (20s)</td>
+                            <td>130s</td>
+                        </tr>
+                        <tr>
+                            <td>R2-FracNet Co.</td>
+                            <td>94.4%</td>
+                            <td>1.21</td>
+                            <td>Model (31s) + FPR (58s) + Segmentation (25s)</td>
+                            <td>114s</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </p>
+            </div>
+
+
+
+            <div class="section" id="citation">
+                <h2>Citation and License</h2>
+
+                <p style="text-align:justify; text-justify:inter-ideograph">
+                    If you find this project useful, please cite our paper as:
+                    <br>
+                    <i>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        Liang Jin, Jiancheng Yang, Kaiming Kuang, Bingbing Ni, Yiyi Gao, Yingli Sun, Pan Gao, Weiling
+                        Ma, Mingyu Tan, Hui Kang, Jiajun Chen, Ming Li. Deep-Learning-Assisted Detection and
+                        Segmentation of Rib Fractures from CT Scans: Development and Validation of FracNet. EBioMedicine
+                        (2020).
+                    </i>
+                    <br><br>
+                    or using bibtex:
+                    <br>
+                    <i>
+                        &nbsp;&nbsp;
+                        @article{ribfrac2020,<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        title={Deep-Learning-Assisted Detection and Segmentation of Rib Fractures from CT Scans:
+                        Development and Validation of FracNet},<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        author={Jin, Liang and Yang, Jiancheng and Kuang, Kaiming and Ni, Bingbing and Gao, Yiyi and
+                        Sun, Yingli and Gao, Pan and Ma, Weiling and Tan, Mingyu and Kang, Hui and Chen, Jiajun and Li,
+                        Ming},<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        journal={EBioMedicine},<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        year={2020},<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        publisher={Elsevier}<br>
+                        &nbsp;&nbsp;
+                        }
+                    </i>
+
+                </p>
+
+                <p>
+                    This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International (<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>) License.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="section">
+            <p align="center">
+                Copyright © 2020- RibFrac Team
+            </p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

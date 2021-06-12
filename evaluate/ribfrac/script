@@ -1,0 +1,4 @@
+#!/bin/bash
+#SBATCH --partition=cpu
+#SBATCH --mem=50G
+python evaluation.py --gt_dir ../../dataset/raw_data/val_label --pred_dir ../../experiments/Unet-6-5-new/val_results/lbl
