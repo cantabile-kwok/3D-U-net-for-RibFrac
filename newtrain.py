@@ -160,8 +160,8 @@ if __name__ == '__main__':
 
     # Preprocess parameters
     parser.add_argument('--n_labels', type=int, default=2, help='number of classes')
-    parser.add_argument('--upper', type=int, default=200, help='')
-    parser.add_argument('--lower', type=int, default=-200, help='')
+    parser.add_argument('--upper', type=int, default=500, help='')
+    parser.add_argument('--lower', type=int, default=-500, help='')
 
     # data in/out and dataset
     parser.add_argument('--dataset_path', default='dataset/fixed_data', help='fixed dataset root path')
