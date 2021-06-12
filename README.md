@@ -4,5 +4,4 @@ Author： 郭奕玮、郭子奥
 
 ### Guidelines
 
-![image-20210613002705601](C:\Users\14038\AppData\Roaming\Typora\typora-user-images\image-20210613002705601.png)
-
+![flowchart](D:\学期文件\大二下\机器学习\3DUnet\3DUNet-Pytorch-master\flowchart.png)
