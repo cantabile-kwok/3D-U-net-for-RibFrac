@@ -17,3 +17,5 @@ Author： 郭奕玮、郭子奥
 随后运行`make_label.py`，也要指定`exp_path`。
 
 最后运行`evaluate/ribfrac/evaluation.py`，其中`gt_dir` `pred_dir`为上一个脚本产生的label目录和原始数据集的label目录。
+
+其中`FracNet`目录clone自https://github.com/M3DV/FracNet， `evaluate`目录clone自https://github.com/M3DV/RibFrac-Challenge
