@@ -19,3 +19,5 @@ Author： 郭奕玮、郭子奥
 最后运行`evaluate/ribfrac/evaluation.py`，其中`gt_dir` `pred_dir`为上一个脚本产生的label目录和原始数据集的label目录。
 
 其中`FracNet`目录clone自https://github.com/M3DV/FracNet， `evaluate`目录clone自https://github.com/M3DV/RibFrac-Challenge
+
+**本实验在test数据集上的预测结果存放在`experiments/hybrid1e-2/test_results`中**
