@@ -1,6 +1,6 @@
 # 3D U-net For RibFrac Challenge
 
-Author： 郭奕玮、郭子奥
+Author： Yiwei Guo, Zi'ao Guo
 
 ## Guidelines
 
